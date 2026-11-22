@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="box-border">
+<html lang="en" class="box-border" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,9 @@
    
 </head>
 
-<body  class="w-full h-[98vh]  bg-[url('/images/network-bg-enhanced.webp')] bg-center bg-auto       bg-no-repeat  flex flex-col gap-22" >
+<body  class="w-full  min-h-screen  bg-center bg-auto  bg-no-repeat  flex flex-col gap-22 bg-linear-to-b from-black to to-blue-600" >
+
+
     <header class="header w-full h-18 bg-blue-600/40 bg-cover bg-no-repeat  bg-fixed bg-center justify-around items-center text-center">
         <menu class="menu_wrapper w-full h-full flex  items-center text-center   from-white to-blue-400 justify-evenly text-xl ">
             <div class="menu-item__1 text-grade">home</div>
@@ -39,9 +41,30 @@
 
 
         <main class="w-full h-[70vh]">
-            <div class="product-wrapper  grid grid-cols- items-center text-white">
+            <div class="product-wrapper w-full h-full grid grid-cols-3 gap-12 p-2 items-center text-white">
                 <div class="product__1  product">
-                    <img class="product-pic">
+                    <img class="product-pic" src="images/product.png">
+                    <div class="product-info"><p>test-item</p></div>
+                    <div class="price-wrapper">
+                        <div class="price">00.00$</div>
+                        <svg class="shopping-cart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                     fill="none" stroke="url(#cartGradient)" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round">
+                  <defs>
+                    <linearGradient id="cartGradient" gradientUnits="userSpaceOnUse"
+                                    x1="24" y1="24" x2="0" y2="0">
+                      <stop offset="0%" stop-color="rgb(0, 60, 255)" />
+                      <stop offset="100%" stop-color="lightblue" />
+                    </linearGradient>
+                  </defs>
+              
+                  <!-- handle and basket -->
+                  <path d="M2 3h3l2.7 12.2a2 2 0 0 0 2 1.6h9a2 2 0 0 0 2-1.5L22 7H6" />
+                  <!-- wheels -->
+                  <circle cx="10" cy="21" r="1" />
+                  <circle cx="19" cy="21" r="1" />
+                        </svg>
+                    </div>
                 </div>
                 <div class="product__2  product"></div>
                 <div class="product__3  product"></div>
