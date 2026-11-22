@@ -1,2 +1,18 @@
 @import "tailwindcss";
 
+
+.text-grade{
+    background: linear-gradient(to top left, rgb(0, 60, 255), lightblue) ;
+    background-clip: text;
+    color: transparent;
+    text-shadow:rgb(61, 161, 255) 1px 1px 10px;
+    font-weight: 600;
+}
+.shopping-cart {
+  width: 22px;
+  height: 22px;
+  filter: drop-shadow(1px 1px 10px rgb(61, 161, 255));
+}
+.product{
+    @apply bg-linear from-white to-blue-500 w-[90%] h-[90%]
+}
