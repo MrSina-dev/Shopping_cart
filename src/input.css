@@ -7,6 +7,7 @@ src: url(fonts/Roboto-regular.ttf);
 }
 body{
     font-family: roboto;
+    overflow: auto;
 }
 .text-grade{
     background: linear-gradient(to top left, rgb(0, 60, 255), lightblue) ;
@@ -15,16 +16,22 @@ body{
     text-shadow:rgb(61, 161, 255) 1px 1px 10px;
     font-weight: 600;
 }
+.text-grade:hover{
+    @apply text-shadow-[white_1px_1px_15px] cursor-pointer
+}
 .shopping-cart {
   width: 22px;
   height: 22px;
   filter: drop-shadow(1px 1px 10px rgb(61, 161, 255));
 }
+.shopping:hover {
+    @apply drop-shadow-sm shadow-white cursor-pointer
+}
 .product{
-    @apply  w-[95%] h-[95%] bg-linear-to-br from-black/90  to-blue-800
-    flex justify-evenly items-center flex-col
-    border-2 border-gray-600/50 border
-
+    @apply  min-w-[95%] min-h-[98%] bg-linear-to-br from-black/90  to-blue-800
+    flex justify-evenly items-center flex-col gap-5
+    border-2 border-gray-600/50 
+    rounded-2xl p-5
 
 
 }
@@ -32,7 +39,7 @@ body{
     @apply w-[50%] h-[50%]
 }
 .price-wrapper{
-    @apply flex gap-6
+    @apply flex gap-6 items-center
 }
 .product-info{
     text-shadow:rgb(61, 161, 255) 1px 1px 10px;
@@ -40,4 +47,8 @@ body{
     background-clip: text;
     color: transparent;
  
+}
+
+.shopping-cart-wrapper{
+    @apply bg-blue-700/50 p-2 rounded-xl
 }
